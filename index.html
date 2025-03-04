@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Currency Converter</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter">
+        <h1>Currency Converter</h1>
+        <div class="form-group">
+            <input type="number" id="amount" placeholder="Enter amount" min="0" step="0.01">
+        </div>
+        
+        <div class="form-group">
+            <select id="from-currency"></select>
+        </div>
+
+        <button class="swap-button" onclick="swapCurrencies()">
+            <span class="material-icons">swap_vert</span>
+            Swap Currencies
+        </button>
+
+        <div class="form-group">
+            <select id="to-currency"></select>
+        </div>
+
+        <div class="loader" id="loader">Converting...</div>
+        <div class="result" id="result"></div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
